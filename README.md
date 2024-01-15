@@ -1,2 +1,31 @@
 # Code-Quiz
-A browser-based timed coding quiz with dynamic HTML, CSS, and JavaScript engaging user interface for multiple-choice questions.
+
+<!-- TODO add badges -->
+
+## Table of content
+
+## Project Description
+
+### Mock up
+
+## Requirements
+
+## Installation instructions
+
+### Option 1 - Download
+
+### Option 2 - Clone project
+
+## Project structure
+
+## Demo
+
+## Features
+
+## Tools and extensions
+
+## Statistics
+
+## References
+
+## License
