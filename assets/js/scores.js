@@ -1,0 +1,1 @@
+var playerScore = 0;
