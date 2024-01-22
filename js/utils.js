@@ -1,3 +1,5 @@
+// TODO add JSDoc description of the file
+
 var timeEl = document.getElementById("time");
 
 var startBtn = document.getElementById("start");
