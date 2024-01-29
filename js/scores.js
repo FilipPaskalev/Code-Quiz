@@ -4,7 +4,6 @@
 function renderScores() {
   let scores =
     JSON.parse(localStorage.getItem(quizSettings.highScoresListName)) || [];
-  console.log("🚀 ~ renderScores ~ scores:", scores);
 
   scores.forEach((userDetails) => {
     let elementLi = document.createElement("li");

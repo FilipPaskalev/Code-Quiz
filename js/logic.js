@@ -8,7 +8,7 @@ let questionIndex = 0;
 let score = 0;
 
 // TODO - add description of the variable and where is used
-let time = quizQuestionsData.length * quizSettings.timePerQuestion;
+let time = quizQuestionsData.length * timePerQuestion;
 
 // TODO - add description of the function
 function startTimer() {
@@ -60,17 +60,6 @@ function renderQuestion() {
 
 // TODO - add description of the function
 function renderNextQuestion() {
-  // TODO make transaction smoother, leave some time
-  // to user to understand that game is finished
-
-  // if (questionIndex === quizQuestionsData.length) {
-  //   setTimeout(() => {
-  //     feedbackEl.classList.add("hide");
-  //     choicesEl.innerHTML = null;
-  //     endQuiz();
-  //   }, 1000);
-  // }
-
   if (questionIndex < quizQuestionsData.length) {
     choicesEl.innerHTML = null;
     renderQuestion();
@@ -95,12 +84,12 @@ function checkAnswer(event) {
   const correctAnswer = quizQuestionsData[questionIndex].correctAnswer;
 
   if (userSelection === correctAnswer) {
-    time = time - quizSettings.timePerQuestion;
+    time = time - timePerQuestion;
     score = score + quizQuestionsData[questionIndex].points;
-    renderFeedback(feedbackUtils.correctMsg);
+    renderFeedback(correctMsg);
   } else {
-    time = time - quizSettings.timePerQuestion;
-    renderFeedback(feedbackUtils.incorrectMsg);
+    time = time - timePerQuestion;
+    renderFeedback(wrongMsg);
   }
 
   questionIndex++;
@@ -126,19 +115,17 @@ function saveHighScoreList(userDetails) {
 }
 
 function setHighScoreInLocaleStorage(arr) {
-  localStorage.setItem(quizSettings.highScoresListName, JSON.stringify(arr));
+  localStorage.setItem(highScoresListName, JSON.stringify(arr));
 }
 
 function getHighScoresFromLocaleStorage() {
-  return (
-    JSON.parse(localStorage.getItem(quizSettings.highScoresListName)) || []
-  );
+  return JSON.parse(localStorage.getItem(highScoresListName)) || [];
 }
 
 function submitScore() {
   const userInitials = initialsInput.value;
   let userDetails = {
-    name: quizSettings.userWithNoName,
+    name: "N/A",
     score: 0,
   };
 
