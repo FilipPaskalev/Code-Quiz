@@ -2,9 +2,6 @@
 let timer;
 
 // TODO - add description of the variable and where is used
-const questionInterval = 3;
-
-// TODO - add description of the variable and where is used
 let time = quizQuestionsData.length * questionInterval;
 
 // TODO - add description of the variable and where is used
