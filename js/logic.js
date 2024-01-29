@@ -7,6 +7,9 @@ let questionIndex = 0;
 // TODO - add description of the variable and where is used
 let score = 0;
 
+// TODO - add description of the variable and where is used
+let time = quizQuestionsData.length * questionInterval;
+
 // TODO - add description of the function
 function startTimer() {
   timer = setInterval(() => {
