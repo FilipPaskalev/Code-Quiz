@@ -1,6 +1,6 @@
 // TODO add file description
 
-const QuizQuestionsData = [
+const quizQuestionsData = [
   {
     id: 1,
     category: "HTML",
