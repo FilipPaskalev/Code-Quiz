@@ -4,6 +4,8 @@
 function renderScores() {
   let scores = JSON.parse(localStorage.getItem(highScoresKey)) || [];
 
+  highScoresOl.innerHTML = "";
+
   scores.forEach((userDetails) => {
     let elementLi = document.createElement("li");
     elementLi.textContent = userDetails.name + " " + userDetails.score;

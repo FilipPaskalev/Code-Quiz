@@ -32,10 +32,12 @@ function startQuiz() {
 // TODO - add description of the function
 function shuffleArr(array) {
   let arr = [...array];
+
   for (let i = arr.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
     [arr[i], arr[j]] = [arr[j], arr[i]];
   }
+
   return arr;
 }
 
@@ -52,6 +54,7 @@ function renderQuestion() {
 
   for (let i = 0; i < currentQuestions.length; i++) {
     const choiceBtn = document.createElement("button");
+
     choiceBtn.textContent = i + 1 + ". " + currentQuestions[i];
     choiceBtn.addEventListener("click", checkAnswer);
     choicesEl.appendChild(choiceBtn);
@@ -71,6 +74,7 @@ function renderNextQuestion() {
 // TODO - add description of the function
 function renderFeedback(message) {
   feedbackEl.classList.remove("hide");
+
   feedbackEl.textContent = message;
 
   setTimeout(() => {
@@ -83,6 +87,7 @@ function checkAnswer(event) {
   const userSelection = event.target.textContent.substr(3);
   const correctAnswer = quizQuestionsData[questionIndex].correctAnswer;
 
+  //TODO add sounds
   if (userSelection === correctAnswer) {
     time = time - timePerQuestion;
     score = score + quizQuestionsData[questionIndex].points;
@@ -105,21 +110,16 @@ function endQuiz() {
   finalScoreEl.textContent = score;
 }
 
-function setHighScoreInLocaleStorage(arr) {
-  localStorage.setItem(highScoresKey, JSON.stringify(arr));
-}
-
-function getHighScoresFromLocaleStorage() {
-  return JSON.parse(localStorage.getItem("highScoresList")) || [];
-}
-
+// TODO - add description of the function
 function saveHighScoreList(userDetails) {
-  let highScoresList = getHighScoresFromLocaleStorage();
+  let highScoresList = JSON.parse(localStorage.getItem(highScoresKey)) || [];
+
   highScoresList.push(userDetails);
   highScoresList.sort((a, b) => b.score - a.score);
-  setHighScoreInLocaleStorage(highScoresKey);
+  localStorage.setItem(highScoresKey, JSON.stringify(highScoresList));
 }
 
+// TODO - add description of the function
 function submitScore() {
   const userInitials = initialsInput.value;
   let userDetails = {
@@ -135,4 +135,5 @@ function submitScore() {
 }
 
 startBtn.onclick = startQuiz;
+
 submitScoreBtn.addEventListener("click", submitScore);
