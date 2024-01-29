@@ -1,6 +1,7 @@
-var timerInterval;
-var time = questions.length * 1;
-var questionIndex = 0;
+let timerInterval;
+let time = questions.length * 1;
+let questionIndex = 0;
+let score = 0;
 
 function startQuiz() {
   startScreenElement.setAttribute("class", "hide");
@@ -22,7 +23,7 @@ function renderQuestion() {
   // Set title
   questionTitleEl.textContent = currentQuestion.question;
 
-  questionsElement.appendChild()
+  questionsElement.appendChild();
   console.log("🚀 ~ renderQuestion ~ currentQuestion:", currentQuestion);
 }
 
