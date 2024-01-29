@@ -117,10 +117,11 @@ function endQuiz() {
 }
 
 function saveHighScoreList(userDetails) {
-  let highScoresList = getHighScores();
+  let highScoresList = getHighScoresFromLocaleStorage();
   highScoresList.push(userDetails);
   highScoresList.sort((a, b) => b.score - a.score);
   setHighScoreInLocaleStorage(highScoresList);
+  console.log(getHighScoresFromLocaleStorage());
 }
 
 function setHighScoreInLocaleStorage(arr) {
@@ -142,7 +143,7 @@ function submitScore() {
 
   userDetails.score = score;
 
-  saveScoreList(userDetails);
+  saveHighScoreList(userDetails);
 }
 
 startBtn.onclick = startQuiz;
