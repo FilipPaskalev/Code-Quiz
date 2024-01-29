@@ -30,6 +30,8 @@
 ## References
 * https://dev.to/codebubb/how-to-shuffle-an-array-in-javascript-2ikj
 * https://www.w3schools.com/howto/howto_js_remove_class.asp
+* https://www.w3schools.com/jsref/jsref_substring.asp
+* https://www.tutorialspoint.com/How-can-I-remove-all-child-elements-of-a-DOM-node-in-JavaScript
 * 
 
 ## License

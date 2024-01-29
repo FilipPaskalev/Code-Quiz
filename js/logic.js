@@ -60,8 +60,13 @@ function renderQuestion() {
 }
 
 function renderNextQuestion() {
-  // if smaller than last index of arr question continue
-  // else endQuiz
+  questionsEl.innerHTML = null;
+
+  if (questionIndex < quizQuestionsData.length) {
+    renderQuestion();
+  } else {
+    endQuiz();
+  }
 }
 
 function renderFeedback(message) {
