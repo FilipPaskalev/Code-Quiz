@@ -8,5 +8,5 @@ const feedbackUtils = {
 const quizSettings = {
   highScoresListName: "highScoresList",
   timePerQuestion: 10,
-  userWithNoInitials: "N/A",
+  userWithNoName: "N/A",
 };

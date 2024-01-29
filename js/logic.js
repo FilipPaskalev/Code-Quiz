@@ -138,11 +138,11 @@ function getHighScoresFromLocaleStorage() {
 function submitScore() {
   const userInitials = initialsInput.value;
   let userDetails = {
-    initials: quizSettings.userWithNoInitials,
+    name: quizSettings.userWithNoName,
     score: 0,
   };
 
-  if (userDetails !== "") userDetails.initials = userInitials;
+  if (userInitials !== "") userDetails.name = userInitials;
 
   userDetails.score = score;
 
