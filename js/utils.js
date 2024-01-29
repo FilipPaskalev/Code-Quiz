@@ -4,10 +4,10 @@
 const timeEl = document.getElementById("time");
 const feedbackEl = document.getElementById("feedback");
 const startScrnEl = document.getElementById("start-screen");
+const endScrnEl = document.getElementById("end-screen");
 const questionsEl = document.getElementById("questions");
 const questionTitleEl = document.getElementById("question-title");
 const choicesEl = document.getElementById("choices");
-const endScrnEl = document.getElementById("end-screen");
 const finalScoreEl = document.getElementById("final-score");
 
 // Sounds
