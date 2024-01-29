@@ -61,6 +61,7 @@ function renderQuestion() {
   }
 }
 
+// TODO - add description of the function
 function renderNextQuestion() {
   // TODO make transaction smoother, leave some time
   // to user to understand that game is finished
@@ -81,6 +82,7 @@ function renderNextQuestion() {
   }
 }
 
+// TODO - add description of the function
 function renderFeedback(message) {
   feedbackEl.classList.remove("hide");
   feedbackEl.textContent = message;
@@ -110,6 +112,7 @@ function checkAnswer(event) {
   renderNextQuestion();
 }
 
+// TODO - add description of the function
 function endQuiz() {
   clearInterval(timer);
   questionsEl.setAttribute("class", "hide");
