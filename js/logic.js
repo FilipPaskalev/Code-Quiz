@@ -1,18 +1,11 @@
 let timer;
-let time = questions.length * 10;
+let time = quizQuestionsData.length * 5;
 let questionIndex = 0;
 let score = 0;
 
-function startQuiz() {
-  startScrnEl.setAttribute("class", "hide");
-  questionsEl.removeAttribute("class");
-  startTimer();
-  renderQuestion();
-}
-
 function startTimer() {
   timer = setInterval(() => {
-    time = time - 1;
+    time--;
     timeEl.textContent = time;
     if (time <= 0) {
       endQuiz();
@@ -20,13 +13,20 @@ function startTimer() {
   }, 1000);
 }
 
-// function renderQuestion() {
-//   var currentQuestion = questions[questionIndex];
-//   // Set title
-//   questionTitleEl.textContent = currentQuestion.question;
+function startQuiz() {
+  startScrnEl.setAttribute("class", "hide");
+  questionsEl.removeAttribute("class");
+  startTimer();
+  // renderQuestion();
+}
 
-//   questionsElement.appendChild();
-//   console.log("🚀 ~ renderQuestion ~ currentQuestion:", currentQuestion);
+// const shuffleArray = (array) => {
+//   return array.sort((a, b) => 0.5 - Math.random());
+// };
+
+// function renderQuestion() {
+//   const currentQuestions = [];
+//   questionTitleEl.textContent = currentQuestion.questionTitle;
 // }
 
 // function generateRandomQuestion() {
