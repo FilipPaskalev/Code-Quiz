@@ -116,4 +116,9 @@ function endQuiz() {
   finalScoreEl.textContent = score;
 }
 
+function submitScore() {
+  const userInitials = initialsInput.value;
+}
+
 startBtn.onclick = startQuiz;
+submitScoreBtn.addEventListener("click", submitScore);
