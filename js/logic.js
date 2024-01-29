@@ -64,15 +64,17 @@ function renderNextQuestion() {
   // else endQuiz
 }
 
+function renderFeedback() {}
+
 // TODO - add description of the function
 function checkAnswer(event) {
   const userSelection = event.target.textContent;
   const correctAnswer = quizQuestionsData[questionIndex].correctAnswer;
 
   if (userSelection === correctAnswer) {
-    return feedback.msgs.correctAnswer;
+    return feedback.correctMsg;
   } else {
-    return feedback.msgs.incorrectAnswer;
+    return feedback.incorrectMsg;
   }
 
   questionIndex++;
