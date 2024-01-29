@@ -14,7 +14,8 @@ let time = quizQuestionsData.length * timePerQuestion;
 function startTimer() {
   timer = setInterval(() => {
     time--;
-    timeEl.textContent = time;
+    $(timeEl).text(time);
+    // timeEl.textContent = time;
     if (time <= 0) {
       endQuiz();
     }
@@ -23,7 +24,8 @@ function startTimer() {
 
 // TODO - add description of the function
 function startQuiz() {
-  startScrnEl.setAttribute("class", "hide");
+  // startScrnEl.setAttribute("class", "hide");
+  $(startScrnEl).addClass("hide");
   questionsEl.removeAttribute("class");
   startTimer();
   renderQuestion();
@@ -134,8 +136,8 @@ function submitScore() {
   if (userInitials !== "") userDetails.name = userInitials;
 
   userDetails.score = score;
-
   saveHighScoreList(userDetails);
+  window.location.href = "highscores.html";
 }
 
 startBtn.onclick = startQuiz;

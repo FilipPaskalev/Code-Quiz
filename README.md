@@ -37,7 +37,7 @@
 * https://www.w3schools.com/jsref/prop_win_localstorage.asp
 * https://www.youtube.com/watch?time_continue=259&v=LfeOLVGHiXI&embeds_referring_euri=https%3A%2F%2Fblog.logrocket.com%2F&source_ve_path=MTM5MTE3LDI4NjY2&feature=emb_logo
 * https://blog.logrocket.com/localstorage-javascript-complete-guide/
-* 
+* https://www.geeksforgeeks.org/how-to-redirect-to-another-webpage-using-javascript/
 
 ## License
 
