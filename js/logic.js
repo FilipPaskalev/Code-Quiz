@@ -1,8 +1,19 @@
+// TODO - add description of the variable and where is used
 let timer;
-let time = quizQuestionsData.length * 5;
+
+// TODO - add description of the variable and where is used
+const questionInterval = 3;
+
+// TODO - add description of the variable and where is used
+let time = quizQuestionsData.length * questionInterval;
+
+// TODO - add description of the variable and where is used
 let questionIndex = 0;
+
+// TODO - add description of the variable and where is used
 let score = 0;
 
+// TODO - add description of the function
 function startTimer() {
   timer = setInterval(() => {
     time--;
@@ -13,6 +24,7 @@ function startTimer() {
   }, 1000);
 }
 
+// TODO - add description of the function
 function startQuiz() {
   startScrnEl.setAttribute("class", "hide");
   questionsEl.removeAttribute("class");
@@ -20,6 +32,7 @@ function startQuiz() {
   renderQuestion();
 }
 
+// TODO - add description of the function
 function shuffleArr(array) {
   let arr = [...array];
   for (let i = arr.length - 1; i > 0; i--) {
@@ -29,45 +42,43 @@ function shuffleArr(array) {
   return arr;
 }
 
+// TODO - add description of the function
 function renderQuestion() {
   const data = quizQuestionsData[questionIndex];
-  let currentQuestions = [data.correct_answer];
-  currentQuestions.push(...data.incorrect_answers);
-  console.log(currentQuestions);
+  let currentQuestions = [data.correctAnswer];
+  currentQuestions.push(...data.incorrectAnswers);
   currentQuestions = shuffleArr(currentQuestions);
-  console.log(currentQuestions);
+
   questionTitleEl.textContent = data.questionTitle;
+
+  for (let i = 0; i < currentQuestions.length; i++) {
+    const choiceBtn = document.createElement("button");
+    choiceBtn.textContent = currentQuestions[i];
+    choiceBtn.addEventListener("click", checkAnswer());
+    choicesEl.appendChild(choiceBtn);
+  }
 }
 
-// function generateRandomQuestion() {
-//   var randomQuestion = {};
-//   var randomIndex = (randomQuestion =
-//     questions[keys[(keys.length * Math.random()) << 0]]);
-//   deleteElementFromArrayByIndex(randomIndex);
-//   return randomQuestion;
-// }
+function renderNextQuestion() {
+  // if smaller than last index of arr question continue
+  // else endQuiz
+}
 
-// function deleteElementFromArrayByIndex(index) {
-//   delete questions[index];
-// }
+// TODO - add description of the function
+function checkAnswer(event) {
+  const userSelection = event.target.textContent;
+  const correctAnswer = quizQuestionsData[questionIndex].correctAnswer;
 
-// function checkAnswer(answer, userChoice) {
-//   if (userChoice === answer) {
-//     return "Correct!";
-//   } else {
-//     return "Wrong!";
-//   }
-// }
+  if (userSelection === correctAnswer) {
+    return feedback.msgs.correctAnswer;
+  } else {
+    return feedback.msgs.incorrectAnswer;
+  }
 
-// function startTiming() {
-//   if (parseInt(time.textContent) < 75) {
-//     time.textContent = parseInt(time.textContent) + 1;
-//     console.log(time.textContent);
-//   } else {
-//     console.log("clear interval");
-//     clearInterval();
-//   }
-// }
+  questionIndex++;
+
+  renderNextQuestion();
+}
 
 function endQuiz() {
   clearInterval(timer);
