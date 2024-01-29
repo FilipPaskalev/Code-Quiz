@@ -1,5 +1,5 @@
 // TODO - add description of the const and where is used
-const feedback = {
+const feedbackUtils = {
   correctMsg: "Correct!",
   incorrectMsg: "Wrong!",
 };

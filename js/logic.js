@@ -64,21 +64,28 @@ function renderNextQuestion() {
   // else endQuiz
 }
 
-function renderFeedback() {}
+function renderFeedback(message) {
+  feedbackEl.classList.remove("hide");
+  feedbackEl.textContent = message;
+
+  setTimeout(() => {
+    feedbackEl.classList.add("hide");
+  }, 1000);
+}
 
 // TODO - add description of the function
 function checkAnswer(event) {
-  const userSelection = event.target.textContent;
+  const userSelection = event.target.textContent.substr(3);
   const correctAnswer = quizQuestionsData[questionIndex].correctAnswer;
 
   if (userSelection === correctAnswer) {
     // TODO - increase score
     time = time - questionInterval;
-    return feedback.correctMsg;
+    renderFeedback(feedbackUtils.correctMsg);
   } else {
     // * * NOTE - DON'T add to anything to score
     time = time - questionInterval;
-    return feedback.incorrectMsg;
+    renderFeedback(feedbackUtils.incorrectMsg);
   }
 
   questionIndex++;
