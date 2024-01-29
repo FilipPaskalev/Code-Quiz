@@ -116,6 +116,7 @@ function endQuiz() {
   clearInterval(timer);
   questionsEl.setAttribute("class", "hide");
   endScrnEl.removeAttribute("class");
+  finalScoreEl.textContent = score;
 }
 
 startBtn.onclick = startQuiz;
