@@ -119,9 +119,15 @@ function endQuiz() {
 function saveScoreList(userDetails) {
   let highScoresList = getHighScores();
   highScoresList.push(userDetails);
+  highScoresList.sort((a, b) => b.score - a.score);
+  setHighScoreInLocaleStorage(highScoresList);
 }
 
-function getHighScores() {
+function setHighScoreInLocaleStorage(arr) {
+  localStorage.setItem("highScoresList", JSON.stringify(arr));
+}
+
+function getHighScoresFromLocaleStorage() {
   return JSON.parse(localStorage.getItem("highScoresList")) || [];
 }
 
