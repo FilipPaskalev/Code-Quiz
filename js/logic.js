@@ -2,9 +2,6 @@
 let timer;
 
 // TODO - add description of the variable and where is used
-let time = quizQuestionsData.length * questionInterval;
-
-// TODO - add description of the variable and where is used
 let questionIndex = 0;
 
 // TODO - add description of the variable and where is used
@@ -116,8 +113,18 @@ function endQuiz() {
   finalScoreEl.textContent = score;
 }
 
+function saveScore(score) {}
+
+function getScores() {
+  return JSON.parse(localStorage.getItem("highScoresList")) || [];
+}
+
 function submitScore() {
   const userInitials = initialsInput.value;
+  let userDetails = {
+    initials: userInitials !== "" ? userDetails : "N/A",
+    score: score,
+  };
 }
 
 startBtn.onclick = startQuiz;
