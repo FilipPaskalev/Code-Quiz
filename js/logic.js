@@ -116,7 +116,10 @@ function endQuiz() {
   finalScoreEl.textContent = score;
 }
 
-function saveScoreList(userDetails) {}
+function saveScoreList(userDetails) {
+  let highScoresList = getHighScores();
+  highScoresList.push(userDetails);
+}
 
 function getHighScores() {
   return JSON.parse(localStorage.getItem("highScoresList")) || [];
@@ -129,7 +132,7 @@ function submitScore() {
     score: 0,
   };
 
-  if (userDetails !== "") userDetails.initials = userDetails;
+  if (userDetails !== "") userDetails.initials = userInitials;
 
   userDetails.score = score;
 

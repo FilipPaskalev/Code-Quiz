@@ -33,7 +33,8 @@
 * https://www.w3schools.com/jsref/jsref_substring.asp
 * https://www.tutorialspoint.com/How-can-I-remove-all-child-elements-of-a-DOM-node-in-JavaScript
 * https://stackoverflow.com/questions/11563638/how-do-i-get-the-value-of-text-input-field-using-javascript
-* 
+* https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
+* https://www.w3schools.com/jsref/prop_win_localstorage.asp
 
 ## License
 
