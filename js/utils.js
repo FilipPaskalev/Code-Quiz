@@ -1,26 +1,23 @@
 // TODO add JSDoc description of the file
 
-var timeEl = document.getElementById("time");
+// Elements
+const timeEl = document.getElementById("time");
+const feedbackEl = document.getElementById("feedback");
+const startScrnEl = document.getElementById("start-screen");
+const questionsEl = document.getElementById("questions");
+const questionTitleEl = document.getElementById("question-title");
+const choicesEl = document.getElementById("choices");
+const endScrnEl = document.getElementById("end-screen");
+const finalScoreEl = document.getElementById("final-score");
 
-var startBtn = document.getElementById("start");
-var startScrnEl = document.getElementById("start-screen");
+// Sounds
+const incorrectSound = new Audio("assets/sfx/incorrect.wav");
+const correctSound = new Audio("assets/sfx/correct.wav");
 
-var questionsElement = document.getElementById("questions");
-var questionTitleEl = document.getElementById("question-title");
-var choicesEl = document.getElementById("choices");
+// Lists
+const highScoresLi = document.getElementById("highscores");
 
-var endScrnEl = document.getElementById("end-screen");
-var startScrnEl = document.getElementById("start-screen");
-
-var finalScoreEl = document.getElementById("final-score");
-
-var feedbackEl = document.getElementById("feedback");
-
-var submitBtn = document.getElementById("submit");
-
-var incorrectSound = new Audio("assets/sfx/incorrect.wav");
-var correctSound = new Audio("assets/sfx/correct.wav");
-
-const highScoresList = document.getElementById("highscores");
-
+// Buttons
+const submitBtn = document.getElementById("submit");
+const startBtn = document.getElementById("start");
 const clearBtn = document.getElementById("clear");
