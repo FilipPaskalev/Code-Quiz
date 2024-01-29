@@ -105,21 +105,19 @@ function endQuiz() {
   finalScoreEl.textContent = score;
 }
 
+function setHighScoreInLocaleStorage(arr) {
+  localStorage.setItem(highScoresKey, JSON.stringify(arr));
+}
+
+function getHighScoresFromLocaleStorage() {
+  return JSON.parse(localStorage.getItem("highScoresList")) || [];
+}
+
 function saveHighScoreList(userDetails) {
   let highScoresList = getHighScoresFromLocaleStorage();
   highScoresList.push(userDetails);
   highScoresList.sort((a, b) => b.score - a.score);
-  setHighScoreInLocaleStorage(highScoresList);
-
-  console.log(getHighScoresFromLocaleStorage());
-}
-
-function setHighScoreInLocaleStorage(arr) {
-  localStorage.setItem(highScoresListName, JSON.stringify(arr));
-}
-
-function getHighScoresFromLocaleStorage() {
-  return JSON.parse(localStorage.getItem(highScoresListName)) || [];
+  setHighScoreInLocaleStorage(highScoresKey);
 }
 
 function submitScore() {

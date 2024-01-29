@@ -2,8 +2,7 @@
 
 // TODO - add description of the function
 function renderScores() {
-  let scores =
-    JSON.parse(localStorage.getItem(quizSettings.highScoresListName)) || [];
+  let scores = JSON.parse(localStorage.getItem(highScoresKey)) || [];
 
   scores.forEach((userDetails) => {
     let elementLi = document.createElement("li");
@@ -14,7 +13,7 @@ function renderScores() {
 
 // TODO - add description of the function
 function clearScores() {
-  localStorage.removeItem(quizSettings.highScoresListName);
+  localStorage.removeItem(highScoresKey);
 }
 
 renderScores();

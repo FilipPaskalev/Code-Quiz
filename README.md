@@ -35,6 +35,9 @@
 * https://stackoverflow.com/questions/11563638/how-do-i-get-the-value-of-text-input-field-using-javascript
 * https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
 * https://www.w3schools.com/jsref/prop_win_localstorage.asp
+* https://www.youtube.com/watch?time_continue=259&v=LfeOLVGHiXI&embeds_referring_euri=https%3A%2F%2Fblog.logrocket.com%2F&source_ve_path=MTM5MTE3LDI4NjY2&feature=emb_logo
+* https://blog.logrocket.com/localstorage-javascript-complete-guide/
+* 
 
 ## License
 

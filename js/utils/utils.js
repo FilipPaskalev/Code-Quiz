@@ -3,7 +3,7 @@
 // Global constants
 const correctMsg = "Correct!";
 const wrongMsg = "Wrong!";
-const highScoresListName = "highScoresList";
+const highScoresKey = "highScoresList";
 const timePerQuestion = 10;
 
 // Elements from index.html
