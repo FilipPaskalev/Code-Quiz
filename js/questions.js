@@ -93,94 +93,94 @@ const quizQuestionsData = [
     correctAnswer: "margin",
     incorrectAnswers: ["padding", "border", "spacing"],
   },
-  {
-    id: 11,
-    category: "JavaScript",
-    questionTitle:
-      "In JavaScript, what is the purpose of the 'addEventListener' function?",
-    correctAnswer: "Attach an event handler to an element",
-    incorrectAnswers: [
-      "Create a new element",
-      "Remove an element",
-      "Change the element's style",
-    ],
-  },
-  {
-    id: 12,
-    category: "UI/UX",
-    questionTitle: "What is the role of a wireframe in UI/UX design?",
-    correctAnswer: "A visual guide for layout",
-    incorrectAnswers: [
-      "A programming language",
-      "A database schema",
-      "A version control system",
-    ],
-  },
-  {
-    id: 13,
-    category: "HTML",
-    questionTitle: "Which HTML tag is used to create a hyperlink?",
-    correctAnswer: "<a>",
-    incorrectAnswers: ["<h>", "<p>", "<link>"],
-  },
-  {
-    id: 14,
-    category: "CSS",
-    questionTitle:
-      "What is the default display property for a <div> element in CSS?",
-    correctAnswer: "block",
-    incorrectAnswers: ["inline", "flex", "grid"],
-  },
-  {
-    id: 15,
-    category: "Git",
-    questionTitle: "What does the 'git pull' command do?",
-    correctAnswer: "Fetches changes and merges them into the current branch",
-    incorrectAnswers: [
-      "Pushes changes to the remote repository",
-      "Creates a new branch",
-      "Resets the changes in the working directory",
-    ],
-  },
-  {
-    id: 16,
-    category: "CSS",
-    questionTitle: "What is the purpose of the 'box-sizing' property in CSS?",
-    correctAnswer: "Defines how the sizing of an element is calculated",
-    incorrectAnswers: [
-      "Sets the width of an element",
-      "Adds a border to an element",
-      "Applies margin to an element",
-    ],
-  },
-  {
-    id: 17,
-    category: "Bootstrap",
-    questionTitle:
-      "Which Bootstrap class is used to create a responsive navigation bar?",
-    correctAnswer: "navbar",
-    incorrectAnswers: ["container", "row", "col"],
-  },
-  {
-    id: 18,
-    category: "UI/UX",
-    questionTitle: "In UX design, what does the term 'persona' refer to?",
-    correctAnswer: "A fictional character representing a user type",
-    incorrectAnswers: [
-      "The user interface of an application",
-      "The flow of interactions in an application",
-      "The visual design of an application",
-    ],
-  },
-  {
-    id: 19,
-    category: "CSS",
-    questionTitle: "What does the acronym CSS stand for?",
-    correctAnswer: "Cascading Style Sheets",
-    incorrectAnswers: [
-      "Creative Style Sheets",
-      "Computer Style Sheets",
-      "Colorful Style Sheets",
-    ],
-  },
+  // {
+  //   id: 11,
+  //   category: "JavaScript",
+  //   questionTitle:
+  //     "In JavaScript, what is the purpose of the 'addEventListener' function?",
+  //   correctAnswer: "Attach an event handler to an element",
+  //   incorrectAnswers: [
+  //     "Create a new element",
+  //     "Remove an element",
+  //     "Change the element's style",
+  //   ],
+  // },
+  // {
+  //   id: 12,
+  //   category: "UI/UX",
+  //   questionTitle: "What is the role of a wireframe in UI/UX design?",
+  //   correctAnswer: "A visual guide for layout",
+  //   incorrectAnswers: [
+  //     "A programming language",
+  //     "A database schema",
+  //     "A version control system",
+  //   ],
+  // },
+  // {
+  //   id: 13,
+  //   category: "HTML",
+  //   questionTitle: "Which HTML tag is used to create a hyperlink?",
+  //   correctAnswer: "<a>",
+  //   incorrectAnswers: ["<h>", "<p>", "<link>"],
+  // },
+  // {
+  //   id: 14,
+  //   category: "CSS",
+  //   questionTitle:
+  //     "What is the default display property for a <div> element in CSS?",
+  //   correctAnswer: "block",
+  //   incorrectAnswers: ["inline", "flex", "grid"],
+  // },
+  // {
+  //   id: 15,
+  //   category: "Git",
+  //   questionTitle: "What does the 'git pull' command do?",
+  //   correctAnswer: "Fetches changes and merges them into the current branch",
+  //   incorrectAnswers: [
+  //     "Pushes changes to the remote repository",
+  //     "Creates a new branch",
+  //     "Resets the changes in the working directory",
+  //   ],
+  // },
+  // {
+  //   id: 16,
+  //   category: "CSS",
+  //   questionTitle: "What is the purpose of the 'box-sizing' property in CSS?",
+  //   correctAnswer: "Defines how the sizing of an element is calculated",
+  //   incorrectAnswers: [
+  //     "Sets the width of an element",
+  //     "Adds a border to an element",
+  //     "Applies margin to an element",
+  //   ],
+  // },
+  // {
+  //   id: 17,
+  //   category: "Bootstrap",
+  //   questionTitle:
+  //     "Which Bootstrap class is used to create a responsive navigation bar?",
+  //   correctAnswer: "navbar",
+  //   incorrectAnswers: ["container", "row", "col"],
+  // },
+  // {
+  //   id: 18,
+  //   category: "UI/UX",
+  //   questionTitle: "In UX design, what does the term 'persona' refer to?",
+  //   correctAnswer: "A fictional character representing a user type",
+  //   incorrectAnswers: [
+  //     "The user interface of an application",
+  //     "The flow of interactions in an application",
+  //     "The visual design of an application",
+  //   ],
+  // },
+  // {
+  //   id: 19,
+  //   category: "CSS",
+  //   questionTitle: "What does the acronym CSS stand for?",
+  //   correctAnswer: "Cascading Style Sheets",
+  //   incorrectAnswers: [
+  //     "Creative Style Sheets",
+  //     "Computer Style Sheets",
+  //     "Colorful Style Sheets",
+  //   ],
+  // },
 ];

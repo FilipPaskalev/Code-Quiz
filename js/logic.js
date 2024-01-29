@@ -46,7 +46,9 @@ function shuffleArr(array) {
 function renderQuestion() {
   const data = quizQuestionsData[questionIndex];
   let currentQuestions = [data.correctAnswer];
+
   currentQuestions.push(...data.incorrectAnswers);
+
   currentQuestions = shuffleArr(currentQuestions);
 
   questionTitleEl.textContent = data.questionTitle;
@@ -60,9 +62,19 @@ function renderQuestion() {
 }
 
 function renderNextQuestion() {
-  questionsEl.innerHTML = null;
+  // TODO make transaction smoother, leave some time
+  // to user to understand that game is finished
+
+  // if (questionIndex === quizQuestionsData.length) {
+  //   setTimeout(() => {
+  //     feedbackEl.classList.add("hide");
+  //     choicesEl.innerHTML = null;
+  //     endQuiz();
+  //   }, 1000);
+  // }
 
   if (questionIndex < quizQuestionsData.length) {
+    choicesEl.innerHTML = null;
     renderQuestion();
   } else {
     endQuiz();
