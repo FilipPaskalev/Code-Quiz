@@ -30,69 +30,69 @@ const quizQuestionsData = [
       "Execute a loop",
     ],
   },
-  {
-    id: 4,
-    category: "CSS",
-    questionTitle: "Which CSS property is used to change the font size?",
-    correctAnswer: "font-size",
-    incorrectAnswers: ["text-style", "font-family", "line-height"],
-  },
-  {
-    id: 5,
-    category: "Bootstrap",
-    questionTitle: "What is Bootstrap?",
-    correctAnswer: "A front-end framework",
-    incorrectAnswers: [
-      "A programming language",
-      "A version control system",
-      "A database management system",
-    ],
-  },
-  {
-    id: 6,
-    category: "Git",
-    questionTitle: "In Git, what command is used to clone a repository?",
-    correctAnswer: "git clone",
-    incorrectAnswers: ["git commit", "git push", "git pull"],
-  },
-  {
-    id: 7,
-    category: "UI/UX",
-    questionTitle: "What does UX stand for?",
-    correctAnswer: "User Experience",
-    incorrectAnswers: [
-      "User Interface",
-      "Universal Experience",
-      "User Exception",
-    ],
-  },
-  {
-    id: 8,
-    category: "JavaScript",
-    questionTitle:
-      "Which JavaScript function is used to add an element to the HTML document?",
-    correctAnswer: "appendChild",
-    incorrectAnswers: ["createElement", "addNode", "insertElement"],
-  },
-  {
-    id: 9,
-    category: "Bootstrap",
-    questionTitle: "What is the purpose of the 'container' class in Bootstrap?",
-    correctAnswer: "To create a fixed-width container",
-    incorrectAnswers: [
-      "To center an element",
-      "To apply a border",
-      "To make text bold",
-    ],
-  },
-  {
-    id: 10,
-    category: "CSS",
-    questionTitle:
-      "Which CSS property is used to create space between elements?",
-    correctAnswer: "margin",
-    incorrectAnswers: ["padding", "border", "spacing"],
-  },
+  // {
+  //   id: 4,
+  //   category: "CSS",
+  //   questionTitle: "Which CSS property is used to change the font size?",
+  //   correctAnswer: "font-size",
+  //   incorrectAnswers: ["text-style", "font-family", "line-height"],
+  // },
+  // {
+  //   id: 5,
+  //   category: "Bootstrap",
+  //   questionTitle: "What is Bootstrap?",
+  //   correctAnswer: "A front-end framework",
+  //   incorrectAnswers: [
+  //     "A programming language",
+  //     "A version control system",
+  //     "A database management system",
+  //   ],
+  // },
+  // {
+  //   id: 6,
+  //   category: "Git",
+  //   questionTitle: "In Git, what command is used to clone a repository?",
+  //   correctAnswer: "git clone",
+  //   incorrectAnswers: ["git commit", "git push", "git pull"],
+  // },
+  // {
+  //   id: 7,
+  //   category: "UI/UX",
+  //   questionTitle: "What does UX stand for?",
+  //   correctAnswer: "User Experience",
+  //   incorrectAnswers: [
+  //     "User Interface",
+  //     "Universal Experience",
+  //     "User Exception",
+  //   ],
+  // },
+  // {
+  //   id: 8,
+  //   category: "JavaScript",
+  //   questionTitle:
+  //     "Which JavaScript function is used to add an element to the HTML document?",
+  //   correctAnswer: "appendChild",
+  //   incorrectAnswers: ["createElement", "addNode", "insertElement"],
+  // },
+  // {
+  //   id: 9,
+  //   category: "Bootstrap",
+  //   questionTitle: "What is the purpose of the 'container' class in Bootstrap?",
+  //   correctAnswer: "To create a fixed-width container",
+  //   incorrectAnswers: [
+  //     "To center an element",
+  //     "To apply a border",
+  //     "To make text bold",
+  //   ],
+  // },
+  // {
+  //   id: 10,
+  //   category: "CSS",
+  //   questionTitle:
+  //     "Which CSS property is used to create space between elements?",
+  //   correctAnswer: "margin",
+  //   incorrectAnswers: ["padding", "border", "spacing"],
+  // },
   // {
   //   id: 11,
   //   category: "JavaScript",

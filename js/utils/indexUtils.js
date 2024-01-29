@@ -19,4 +19,4 @@ const correctSound = new Audio("assets/sfx/correct.wav");
 
 // Buttons
 const startBtn = document.getElementById("start");
-const submitBtn = document.getElementById("submit");
+const submitScoreBtn = document.getElementById("submit");
