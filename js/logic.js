@@ -17,17 +17,27 @@ function startQuiz() {
   startScrnEl.setAttribute("class", "hide");
   questionsEl.removeAttribute("class");
   startTimer();
-  // renderQuestion();
+  renderQuestion();
 }
 
-// const shuffleArray = (array) => {
-//   return array.sort((a, b) => 0.5 - Math.random());
-// };
+function shuffleArr(array) {
+  let arr = [...array];
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+}
 
-// function renderQuestion() {
-//   const currentQuestions = [];
-//   questionTitleEl.textContent = currentQuestion.questionTitle;
-// }
+function renderQuestion() {
+  const data = quizQuestionsData[questionIndex];
+  let currentQuestions = [data.correct_answer];
+  currentQuestions.push(...data.incorrect_answers);
+  console.log(currentQuestions);
+  currentQuestions = shuffleArr(currentQuestions);
+  console.log(currentQuestions);
+  questionTitleEl.textContent = data.questionTitle;
+}
 
 // function generateRandomQuestion() {
 //   var randomQuestion = {};
