@@ -20,12 +20,6 @@ function startTimer() {
   }, 1000);
 }
 
-function endQuiz() {
-  clearInterval(timer);
-  // questionsElement.setAttribute("class", "hide");
-  // endScreenElement.removeAttribute("class");
-}
-
 // function renderQuestion() {
 //   var currentQuestion = questions[questionIndex];
 //   // Set title
@@ -65,6 +59,10 @@ function endQuiz() {
 //   }
 // }
 
-startBtn.onclick = startQuiz;
+function endQuiz() {
+  clearInterval(timer);
+  questionsEl.setAttribute("class", "hide");
+  endScrnEl.removeAttribute("class");
+}
 
-// setInterval(startTiming, 1000);
+startBtn.onclick = startQuiz;
