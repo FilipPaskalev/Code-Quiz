@@ -1,21 +1,29 @@
-let timerInterval;
-let time = questions.length * 1;
+let timer;
+let time = questions.length * 10;
 let questionIndex = 0;
 let score = 0;
 
 function startQuiz() {
   startScrnEl.setAttribute("class", "hide");
   questionsEl.removeAttribute("class");
+  startTimer();
+  renderQuestion();
+}
 
-  timerInterval = setInterval(() => {
+function startTimer() {
+  timer = setInterval(() => {
     time = time - 1;
-    timeElement.textContent = time;
+    timeEl.textContent = time;
     if (time <= 0) {
       endQuiz();
     }
   }, 1000);
+}
 
-  renderQuestion();
+function endQuiz() {
+  clearInterval(timer);
+  // questionsElement.setAttribute("class", "hide");
+  // endScreenElement.removeAttribute("class");
 }
 
 // function renderQuestion() {
@@ -25,12 +33,6 @@ function startQuiz() {
 
 //   questionsElement.appendChild();
 //   console.log("🚀 ~ renderQuestion ~ currentQuestion:", currentQuestion);
-// }
-
-// function endQuiz() {
-//   clearInterval(timerInterval);
-//   questionsElement.setAttribute("class", "hide");
-//   endScreenElement.removeAttribute("class");
 // }
 
 // function generateRandomQuestion() {
@@ -63,6 +65,6 @@ function startQuiz() {
 //   }
 // }
 
-// startBtn.onclick = startQuiz;
+startBtn.onclick = startQuiz;
 
 // setInterval(startTiming, 1000);
