@@ -20,3 +20,7 @@ var submitBtn = document.getElementById("submit");
 
 var incorrectSound = new Audio("assets/sfx/incorrect.wav");
 var correctSound = new Audio("assets/sfx/correct.wav");
+
+const highScoresList = document.getElementById("highscores");
+
+const clearBtn = document.getElementById("clear");
