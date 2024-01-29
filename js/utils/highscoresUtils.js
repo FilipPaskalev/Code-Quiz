@@ -4,4 +4,4 @@
 const highScoresOl = document.getElementById("highscores");
 
 // Buttons
-const clearBtn = document.getElementById("clear");
+const clearHighScoresBtn = document.getElementById("clear");
