@@ -113,6 +113,14 @@ function endQuiz() {
 // TODO - add description of the function
 function saveHighScoreList(userDetails) {
   let highScoresList = JSON.parse(localStorage.getItem(highScoresKey)) || [];
+  console.log(
+    "🚀 ~ saveHighScoreList ~ highScoresList:",
+    JSON.stringify(highScoresList)
+  );
+
+  if (!Array.isArray(highScoresList)) {
+    highScoresList = [];
+  }
 
   highScoresList.push(userDetails);
   highScoresList.sort((a, b) => b.score - a.score);
