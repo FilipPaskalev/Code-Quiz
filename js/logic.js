@@ -116,7 +116,7 @@ function endQuiz() {
   finalScoreEl.textContent = score;
 }
 
-function saveScoreList(userDetails) {
+function saveHighScoreList(userDetails) {
   let highScoresList = getHighScores();
   highScoresList.push(userDetails);
   highScoresList.sort((a, b) => b.score - a.score);
