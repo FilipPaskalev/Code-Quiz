@@ -32,6 +32,7 @@
 * https://www.w3schools.com/howto/howto_js_remove_class.asp
 * https://www.w3schools.com/jsref/jsref_substring.asp
 * https://www.tutorialspoint.com/How-can-I-remove-all-child-elements-of-a-DOM-node-in-JavaScript
+* https://stackoverflow.com/questions/11563638/how-do-i-get-the-value-of-text-input-field-using-javascript
 * 
 
 ## License

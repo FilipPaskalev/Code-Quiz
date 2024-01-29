@@ -116,7 +116,7 @@ function endQuiz() {
   finalScoreEl.textContent = score;
 }
 
-function saveScore(score) {}
+function saveScoreList(userDetails) {}
 
 function getHighScores() {
   return JSON.parse(localStorage.getItem("highScoresList")) || [];
@@ -125,9 +125,15 @@ function getHighScores() {
 function submitScore() {
   const userInitials = initialsInput.value;
   let userDetails = {
-    initials: userInitials !== "" ? userDetails : "N/A",
-    score: score,
+    initials: "N/A",
+    score: 0,
   };
+
+  if (userDetails !== "") userDetails.initials = userDetails;
+
+  userDetails.score = score;
+
+  saveScoreList(userDetails);
 }
 
 startBtn.onclick = startQuiz;
