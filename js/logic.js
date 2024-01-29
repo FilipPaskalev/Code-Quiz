@@ -8,7 +8,7 @@ let questionIndex = 0;
 let score = 0;
 
 // TODO - add description of the variable and where is used
-let time = quizQuestionsData.length * questionInterval;
+let time = quizQuestionsData.length * quizSettings.timePerQuestion;
 
 // TODO - add description of the function
 function startTimer() {
@@ -95,11 +95,11 @@ function checkAnswer(event) {
   const correctAnswer = quizQuestionsData[questionIndex].correctAnswer;
 
   if (userSelection === correctAnswer) {
-    time = time - questionInterval;
+    time = time - quizSettings.timePerQuestion;
     score = score + quizQuestionsData[questionIndex].points;
     renderFeedback(feedbackUtils.correctMsg);
   } else {
-    time = time - questionInterval;
+    time = time - quizSettings.timePerQuestion;
     renderFeedback(feedbackUtils.incorrectMsg);
   }
 
@@ -121,21 +121,24 @@ function saveHighScoreList(userDetails) {
   highScoresList.push(userDetails);
   highScoresList.sort((a, b) => b.score - a.score);
   setHighScoreInLocaleStorage(highScoresList);
+
   console.log(getHighScoresFromLocaleStorage());
 }
 
 function setHighScoreInLocaleStorage(arr) {
-  localStorage.setItem("highScoresList", JSON.stringify(arr));
+  localStorage.setItem(quizSettings.highScoresListName, JSON.stringify(arr));
 }
 
 function getHighScoresFromLocaleStorage() {
-  return JSON.parse(localStorage.getItem("highScoresList")) || [];
+  return (
+    JSON.parse(localStorage.getItem(quizSettings.highScoresListName)) || []
+  );
 }
 
 function submitScore() {
   const userInitials = initialsInput.value;
   let userDetails = {
-    initials: "N/A",
+    initials: quizSettings.userWithNoInitials,
     score: 0,
   };
 

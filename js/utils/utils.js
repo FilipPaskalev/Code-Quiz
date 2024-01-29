@@ -5,6 +5,8 @@ const feedbackUtils = {
 };
 
 // TODO - add description of the variable and where is used
-const questionInterval = 7;
-
-let highScoresList = [];
+const quizSettings = {
+  highScoresListName: "highScoresList",
+  timePerQuestion: 10,
+  userWithNoInitials: "N/A",
+};

@@ -4,10 +4,9 @@
 function renderScores() {}
 
 // TODO - add description of the function
-function clearScores() {}
-
-// TODO - add description of the function
-function loadScores() {}
+function clearScores() {
+  localStorage.removeItem(quizSettings.highScoresListName);
+}
 
 renderScores();
 
