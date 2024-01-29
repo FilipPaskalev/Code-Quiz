@@ -54,7 +54,7 @@ function renderQuestion() {
   for (let i = 0; i < currentQuestions.length; i++) {
     const choiceBtn = document.createElement("button");
     choiceBtn.textContent = currentQuestions[i];
-    choiceBtn.addEventListener("click", checkAnswer());
+    choiceBtn.addEventListener("click", checkAnswer);
     choicesEl.appendChild(choiceBtn);
   }
 }
