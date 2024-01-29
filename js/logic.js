@@ -98,11 +98,10 @@ function checkAnswer(event) {
   const correctAnswer = quizQuestionsData[questionIndex].correctAnswer;
 
   if (userSelection === correctAnswer) {
-    // TODO - increase score
     time = time - questionInterval;
+    score = score + quizQuestionsData[questionIndex].points;
     renderFeedback(feedbackUtils.correctMsg);
   } else {
-    // * * NOTE - DON'T add to anything to score
     time = time - questionInterval;
     renderFeedback(feedbackUtils.incorrectMsg);
   }
