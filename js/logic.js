@@ -115,7 +115,7 @@ function endQuiz() {
 
 function saveScore(score) {}
 
-function getScores() {
+function getHighScores() {
   return JSON.parse(localStorage.getItem("highScoresList")) || [];
 }
 
