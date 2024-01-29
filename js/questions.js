@@ -3,6 +3,7 @@
 const quizQuestionsData = [
   {
     id: 1,
+    points: 2,
     category: "HTML",
     questionTitle: "What does HTML stand for?",
     correctAnswer: "Hypertext Markup Language",
@@ -14,6 +15,7 @@ const quizQuestionsData = [
   },
   {
     id: 2,
+    points: 3,
     category: "HTML",
     questionTitle: "Which of the following is NOT a valid HTML tag?",
     correctAnswer: "<circle>",
@@ -21,6 +23,7 @@ const quizQuestionsData = [
   },
   {
     id: 3,
+    points: 4,
     category: "JavaScript",
     questionTitle: "What is the purpose of the 'var' keyword in JavaScript?",
     correctAnswer: "Declare a variable",
@@ -32,6 +35,7 @@ const quizQuestionsData = [
   },
   // {
   //   id: 4,
+  // points: 4,
   //   category: "CSS",
   //   questionTitle: "Which CSS property is used to change the font size?",
   //   correctAnswer: "font-size",
@@ -39,6 +43,7 @@ const quizQuestionsData = [
   // },
   // {
   //   id: 5,
+  // points: 5,
   //   category: "Bootstrap",
   //   questionTitle: "What is Bootstrap?",
   //   correctAnswer: "A front-end framework",
@@ -50,6 +55,7 @@ const quizQuestionsData = [
   // },
   // {
   //   id: 6,
+  // points: 8,
   //   category: "Git",
   //   questionTitle: "In Git, what command is used to clone a repository?",
   //   correctAnswer: "git clone",
@@ -57,6 +63,7 @@ const quizQuestionsData = [
   // },
   // {
   //   id: 7,
+  // points: 5,
   //   category: "UI/UX",
   //   questionTitle: "What does UX stand for?",
   //   correctAnswer: "User Experience",
@@ -68,6 +75,7 @@ const quizQuestionsData = [
   // },
   // {
   //   id: 8,
+  // points: 9,
   //   category: "JavaScript",
   //   questionTitle:
   //     "Which JavaScript function is used to add an element to the HTML document?",
@@ -76,6 +84,7 @@ const quizQuestionsData = [
   // },
   // {
   //   id: 9,
+  // points: 6,
   //   category: "Bootstrap",
   //   questionTitle: "What is the purpose of the 'container' class in Bootstrap?",
   //   correctAnswer: "To create a fixed-width container",
@@ -87,6 +96,7 @@ const quizQuestionsData = [
   // },
   // {
   //   id: 10,
+  // points: 10,
   //   category: "CSS",
   //   questionTitle:
   //     "Which CSS property is used to create space between elements?",
@@ -95,6 +105,7 @@ const quizQuestionsData = [
   // },
   // {
   //   id: 11,
+  // points: 7,
   //   category: "JavaScript",
   //   questionTitle:
   //     "In JavaScript, what is the purpose of the 'addEventListener' function?",
@@ -107,6 +118,7 @@ const quizQuestionsData = [
   // },
   // {
   //   id: 12,
+  // points: 5,
   //   category: "UI/UX",
   //   questionTitle: "What is the role of a wireframe in UI/UX design?",
   //   correctAnswer: "A visual guide for layout",
@@ -118,6 +130,7 @@ const quizQuestionsData = [
   // },
   // {
   //   id: 13,
+  // points: 1,
   //   category: "HTML",
   //   questionTitle: "Which HTML tag is used to create a hyperlink?",
   //   correctAnswer: "<a>",
@@ -125,6 +138,7 @@ const quizQuestionsData = [
   // },
   // {
   //   id: 14,
+  // points: 2,
   //   category: "CSS",
   //   questionTitle:
   //     "What is the default display property for a <div> element in CSS?",
@@ -133,6 +147,7 @@ const quizQuestionsData = [
   // },
   // {
   //   id: 15,
+  // points: 8,
   //   category: "Git",
   //   questionTitle: "What does the 'git pull' command do?",
   //   correctAnswer: "Fetches changes and merges them into the current branch",
@@ -144,6 +159,7 @@ const quizQuestionsData = [
   // },
   // {
   //   id: 16,
+  // points: 7,
   //   category: "CSS",
   //   questionTitle: "What is the purpose of the 'box-sizing' property in CSS?",
   //   correctAnswer: "Defines how the sizing of an element is calculated",
@@ -155,6 +171,7 @@ const quizQuestionsData = [
   // },
   // {
   //   id: 17,
+  // points: 3,
   //   category: "Bootstrap",
   //   questionTitle:
   //     "Which Bootstrap class is used to create a responsive navigation bar?",
@@ -163,6 +180,7 @@ const quizQuestionsData = [
   // },
   // {
   //   id: 18,
+  // points: 10,
   //   category: "UI/UX",
   //   questionTitle: "In UX design, what does the term 'persona' refer to?",
   //   correctAnswer: "A fictional character representing a user type",
@@ -174,6 +192,7 @@ const quizQuestionsData = [
   // },
   // {
   //   id: 19,
+  // points: 3,
   //   category: "CSS",
   //   questionTitle: "What does the acronym CSS stand for?",
   //   correctAnswer: "Cascading Style Sheets",
