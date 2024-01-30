@@ -1,4 +1,15 @@
 /**
+ * @fileOverview Quiz Application
+ * @description This file contains the JavaScript code for a quiz application.
+ * It includes functions to handle the quiz timer, render questions, check answers,
+ * manage scores, and store high scores in local storage.
+ * The application also allows users to start the quiz, submit their scores, and view high scores.
+ *
+ * @version 1.0.0
+ * @license MIT
+ */
+
+/**
  * Description - Timer used for the quiz.
  * @type {number}
  */
@@ -25,6 +36,7 @@ let time = quizQuestionsData.length * timePerQuestion;
 
 /**
  * Description - Starts timer for quiz.
+ * @function
  */
 function startTimer() {
   timer = setInterval(() => {
@@ -38,6 +50,7 @@ function startTimer() {
 
 /**
  * Description - Starts quiz by showing questions, and starting the timer.
+ * @function
  */
 function startQuiz() {
   startScrnEl.setAttribute("class", "hide");
@@ -48,6 +61,7 @@ function startQuiz() {
 
 /**
  * Description - Take given array and returned it shuffled.
+ * @function
  * @param {Array} array - The array to be shuffled.
  * @returns {Array} - The shuffled array.
  */
@@ -64,6 +78,7 @@ function shuffleArr(array) {
 
 /**
  * Description - Update UI to render current question on the screen.
+ * @function
  */
 function renderQuestion() {
   const data = quizQuestionsData[questionIndex];
@@ -88,6 +103,7 @@ function renderQuestion() {
 /**
  * Description - Renders the next quiz question (recursive to renderQuestion()
  * function) and validate if the quiz needs to ne ended.
+ * @function
  */
 function renderNextQuestion() {
   if (questionIndex < quizQuestionsData.length) {
@@ -100,6 +116,7 @@ function renderNextQuestion() {
 
 /**
  * Description - Update UI to show feedback on the user's answer.
+ * @function
  * @param {String} message - The feedback message to be displayed.
  */
 function renderFeedback(message) {
@@ -114,6 +131,7 @@ function renderFeedback(message) {
 /**
  * Description - Checks the user's answer, updates the score and time,
  * and renders feedback.
+ * @function
  * @param {Event} event - The event object containing the user's selection
  */
 function checkAnswer(event) {
@@ -138,6 +156,7 @@ function checkAnswer(event) {
 /**
  * Description - Ends the quiz, clears the timer, and displays the end
  * screen with the final score.
+ * @function
  */
 function endQuiz() {
   clearInterval(timer);
@@ -148,6 +167,7 @@ function endQuiz() {
 
 /**
  * Description - Saves the user's high score in the local storage.
+ * @function
  * @param {Object} userDetails - The details of the user, including user name
  * and user score.
  */
@@ -167,6 +187,7 @@ function saveHighScoreList(userDetails) {
  * Description - Submits the user's score, including initials if provided
  * (if not set initials to N/A). Redirects to the highscores page (to avoid
  * submitting user score more than once).
+ * @function
  */
 function submitScore() {
   const userInitials = initialsInput.value;

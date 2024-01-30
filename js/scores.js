@@ -1,6 +1,9 @@
-// TODO add JSDoc description of the file - what contains, what is the purpose of the file and so on
-
-// TODO - add description of the function
+/**
+ * Renders high scores in an ordered list on the page.
+ * Retrieves high scores from local storage, creates list elements,
+ * and appends them to the ordered list element.
+ * @function
+ */
 function renderScores() {
   let scores = JSON.parse(localStorage.getItem(highScoresKey)) || [];
 
@@ -13,7 +16,10 @@ function renderScores() {
   });
 }
 
-// TODO - add description of the function
+/**
+ * Clears all high scores from local storage.
+ * @function
+ */
 function clearScores() {
   localStorage.removeItem(highScoresKey);
 }
