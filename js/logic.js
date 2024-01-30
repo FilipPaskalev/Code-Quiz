@@ -37,7 +37,7 @@ function startTimer() {
 }
 
 /**
- * Description -
+ * Description - Starts quiz by showing questions, and starting the timer.
  */
 function startQuiz() {
   startScrnEl.setAttribute("class", "hide");
@@ -47,9 +47,9 @@ function startQuiz() {
 }
 
 /**
- * Description -
- * @param {*} array
- * @returns {{}}
+ * Description - Take given array and returned it shuffled.
+ * @param {*} array - The array to be shuffled.
+ * @returns {{}} - The shuffled array.
  */
 function shuffleArr(array) {
   let arr = [...array];
