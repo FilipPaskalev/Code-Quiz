@@ -15,6 +15,7 @@
     - [Additional Features](#additional-features)
     - [Technical Implementation](#technical-implementation)
   - [Installation instructions](#installation-instructions)
+    - [Option 1 - Download](#option-1---download)
     - [Option 2 - Clone project](#option-2---clone-project)
   - [Project structure](#project-structure)
   - [Demo](#demo)
@@ -79,6 +80,8 @@ The following animation demonstrates the application functionality:
       * Feedback on user progress is provided during the quiz.
 
 ## Installation instructions
+
+### Option 1 - Download
 
 Download the project from GitHub [repository](https://github.com/FilipPaskalev/Code-Quiz) on your local machine.
 
