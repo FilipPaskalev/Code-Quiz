@@ -14,8 +14,7 @@ let time = quizQuestionsData.length * timePerQuestion;
 function startTimer() {
   timer = setInterval(() => {
     time--;
-    $(timeEl).text(time);
-    // timeEl.textContent = time;
+    timeEl.textContent = time;
     if (time <= 0) {
       endQuiz();
     }
@@ -24,8 +23,7 @@ function startTimer() {
 
 // TODO - add description of the function
 function startQuiz() {
-  // startScrnEl.setAttribute("class", "hide");
-  $(startScrnEl).addClass("hide");
+  startScrnEl.setAttribute("class", "hide");
   questionsEl.removeAttribute("class");
   startTimer();
   renderQuestion();
@@ -55,9 +53,10 @@ function renderQuestion() {
   questionTitleEl.textContent = data.questionTitle;
 
   for (let i = 0; i < currentQuestions.length; i++) {
+    const btnText = i + 1 + ". " + currentQuestions[i];
     const choiceBtn = document.createElement("button");
 
-    choiceBtn.textContent = i + 1 + ". " + currentQuestions[i];
+    choiceBtn.textContent = btnText;
     choiceBtn.addEventListener("click", checkAnswer);
     choicesEl.appendChild(choiceBtn);
   }
@@ -76,7 +75,6 @@ function renderNextQuestion() {
 // TODO - add description of the function
 function renderFeedback(message) {
   feedbackEl.classList.remove("hide");
-
   feedbackEl.textContent = message;
 
   setTimeout(() => {
