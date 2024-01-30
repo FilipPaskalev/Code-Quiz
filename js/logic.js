@@ -48,8 +48,8 @@ function startQuiz() {
 
 /**
  * Description - Take given array and returned it shuffled.
- * @param {*} array - The array to be shuffled.
- * @returns {{}} - The shuffled array.
+ * @param {Array} array - The array to be shuffled.
+ * @returns {Array} - The shuffled array.
  */
 function shuffleArr(array) {
   let arr = [...array];
@@ -100,7 +100,7 @@ function renderNextQuestion() {
 
 /**
  * Description - Update UI to show feedback on the user's answer.
- * @param {*} message - The feedback message to be displayed.
+ * @param {String} message - The feedback message to be displayed.
  */
 function renderFeedback(message) {
   feedbackEl.classList.remove("hide");
@@ -114,7 +114,7 @@ function renderFeedback(message) {
 /**
  * Description - Checks the user's answer, updates the score and time,
  * and renders feedback.
- * @param {*} event - The event object containing the user's selection
+ * @param {Event} event - The event object containing the user's selection
  */
 function checkAnswer(event) {
   const userSelection = event.target.textContent.substr(3);
@@ -148,7 +148,7 @@ function endQuiz() {
 
 /**
  * Description - Saves the user's high score in the local storage.
- * @param {*} userDetails - The details of the user, including user name
+ * @param {Object} userDetails - The details of the user, including user name
  * and user score.
  */
 function saveHighScoreList(userDetails) {
