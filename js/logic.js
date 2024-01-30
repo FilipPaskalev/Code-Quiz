@@ -138,13 +138,14 @@ function checkAnswer(event) {
   const userSelection = event.target.textContent.substr(3);
   const correctAnswer = quizQuestionsData[questionIndex].correctAnswer;
 
-  //TODO add sounds
   if (userSelection === correctAnswer) {
     time = time - timePerQuestion;
     score = score + quizQuestionsData[questionIndex].points;
+    correctSound.play();
     renderFeedback(correctMsg);
   } else {
     time = time - timePerQuestion;
+    incorrectSound.play();
     renderFeedback(wrongMsg);
   }
 
