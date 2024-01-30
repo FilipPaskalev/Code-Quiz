@@ -86,7 +86,8 @@ function renderQuestion() {
 }
 
 /**
- * Description -
+ * Description - Renders the next quiz question (recursive to renderQuestion()
+ * function) and validate if the quiz needs to ne ended.
  */
 function renderNextQuestion() {
   if (questionIndex < quizQuestionsData.length) {
