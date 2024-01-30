@@ -1,5 +1,3 @@
-// TODO - add description of the const and where is used
-
 // Global constants
 const correctMsg = "Correct!";
 const wrongMsg = "Wrong!";

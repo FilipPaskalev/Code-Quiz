@@ -1,5 +1,7 @@
-// TODO add file description
-
+/**
+ * Description - Object that store data for the quiz
+ * @type {Array} - Array of objects
+ */
 const quizQuestionsData = [
   {
     id: 1,
@@ -27,11 +29,7 @@ const quizQuestionsData = [
     category: "JavaScript",
     questionTitle: "What is the purpose of the 'var' keyword in JavaScript?",
     correctAnswer: "Declare a variable",
-    incorrectAnswers: [
-      "Define a function",
-      "Link to an external script",
-      "Execute a loop",
-    ],
+    incorrectAnswers: ["Define a function", "Link to an external script", "Execute a loop"],
   },
   {
     id: 4,
@@ -47,11 +45,7 @@ const quizQuestionsData = [
     category: "Bootstrap",
     questionTitle: "What is Bootstrap?",
     correctAnswer: "A front-end framework",
-    incorrectAnswers: [
-      "A programming language",
-      "A version control system",
-      "A database management system",
-    ],
+    incorrectAnswers: ["A programming language", "A version control system", "A database management system"],
   },
   {
     id: 6,
@@ -67,18 +61,13 @@ const quizQuestionsData = [
     category: "UI/UX",
     questionTitle: "What does UX stand for?",
     correctAnswer: "User Experience",
-    incorrectAnswers: [
-      "User Interface",
-      "Universal Experience",
-      "User Exception",
-    ],
+    incorrectAnswers: ["User Interface", "Universal Experience", "User Exception"],
   },
   {
     id: 8,
     points: 9,
     category: "JavaScript",
-    questionTitle:
-      "Which JavaScript function is used to add an element to the HTML document?",
+    questionTitle: "Which JavaScript function is used to add an element to the HTML document?",
     correctAnswer: "appendChild",
     incorrectAnswers: ["createElement", "addNode", "insertElement"],
   },
@@ -88,18 +77,13 @@ const quizQuestionsData = [
     category: "Bootstrap",
     questionTitle: "What is the purpose of the 'container' class in Bootstrap?",
     correctAnswer: "To create a fixed-width container",
-    incorrectAnswers: [
-      "To center an element",
-      "To apply a border",
-      "To make text bold",
-    ],
+    incorrectAnswers: ["To center an element", "To apply a border", "To make text bold"],
   },
   {
     id: 10,
     points: 10,
     category: "CSS",
-    questionTitle:
-      "Which CSS property is used to create space between elements?",
+    questionTitle: "Which CSS property is used to create space between elements?",
     correctAnswer: "margin",
     incorrectAnswers: ["padding", "border", "spacing"],
   },
@@ -107,14 +91,9 @@ const quizQuestionsData = [
     id: 11,
     points: 7,
     category: "JavaScript",
-    questionTitle:
-      "In JavaScript, what is the purpose of the 'addEventListener' function?",
+    questionTitle: "In JavaScript, what is the purpose of the 'addEventListener' function?",
     correctAnswer: "Attach an event handler to an element",
-    incorrectAnswers: [
-      "Create a new element",
-      "Remove an element",
-      "Change the element's style",
-    ],
+    incorrectAnswers: ["Create a new element", "Remove an element", "Change the element's style"],
   },
   {
     id: 12,
@@ -122,11 +101,7 @@ const quizQuestionsData = [
     category: "UI/UX",
     questionTitle: "What is the role of a wireframe in UI/UX design?",
     correctAnswer: "A visual guide for layout",
-    incorrectAnswers: [
-      "A programming language",
-      "A database schema",
-      "A version control system",
-    ],
+    incorrectAnswers: ["A programming language", "A database schema", "A version control system"],
   },
   {
     id: 13,
@@ -140,8 +115,7 @@ const quizQuestionsData = [
     id: 14,
     points: 2,
     category: "CSS",
-    questionTitle:
-      "What is the default display property for a <div> element in CSS?",
+    questionTitle: "What is the default display property for a <div> element in CSS?",
     correctAnswer: "block",
     incorrectAnswers: ["inline", "flex", "grid"],
   },
@@ -163,18 +137,13 @@ const quizQuestionsData = [
     category: "CSS",
     questionTitle: "What is the purpose of the 'box-sizing' property in CSS?",
     correctAnswer: "Defines how the sizing of an element is calculated",
-    incorrectAnswers: [
-      "Sets the width of an element",
-      "Adds a border to an element",
-      "Applies margin to an element",
-    ],
+    incorrectAnswers: ["Sets the width of an element", "Adds a border to an element", "Applies margin to an element"],
   },
   {
     id: 17,
     points: 3,
     category: "Bootstrap",
-    questionTitle:
-      "Which Bootstrap class is used to create a responsive navigation bar?",
+    questionTitle: "Which Bootstrap class is used to create a responsive navigation bar?",
     correctAnswer: "navbar",
     incorrectAnswers: ["container", "row", "col"],
   },
@@ -196,10 +165,6 @@ const quizQuestionsData = [
     category: "CSS",
     questionTitle: "What does the acronym CSS stand for?",
     correctAnswer: "Cascading Style Sheets",
-    incorrectAnswers: [
-      "Creative Style Sheets",
-      "Computer Style Sheets",
-      "Colorful Style Sheets",
-    ],
+    incorrectAnswers: ["Creative Style Sheets", "Computer Style Sheets", "Colorful Style Sheets"],
   },
 ];
