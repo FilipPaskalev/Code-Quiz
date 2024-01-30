@@ -22,6 +22,7 @@ function renderScores() {
  */
 function clearScores() {
   localStorage.removeItem(highScoresKey);
+  renderScores();
 }
 
 renderScores();
