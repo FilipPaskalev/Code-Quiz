@@ -22,6 +22,8 @@
   - [Tools and extensions](#tools-and-extensions)
     - [VS Code Counter](#vs-code-counter)
   - [Statistics](#statistics)
+    - [Files](#files)
+    - [Languages](#languages)
   - [References](#references)
   - [Licenses](#licenses)
     - [MIT License](#mit-license)
@@ -183,6 +185,28 @@ Screenshot of the application is on the image below.
 [VS Code extension](https://marketplace.visualstudio.com/items?itemName=uctakeoff.vscode-counter) counts blank lines, comment lines, and physical lines of source code in many programming languages. This extension uses other language extensions to determine the line of code. Therefore, you may need to install the language extension to support a new language. Conversely, as the number of language extensions increases, the range of support for this feature also increases.
 
 ## Statistics
+
+### Files
+| filename | language | code | comment | blank | total |
+| :--- | :--- | ---: | ---: | ---: | ---: |
+| [.prettierrc](/.prettierrc) | JSON | 5 | 0 | 1 | 6 |
+| [README.md](/README.md) | Markdown | 164 | 0 | 59 | 223 |
+| [css/styles.css](/css/styles.css) | CSS | 73 | 0 | 16 | 89 |
+| [highscores.html](/highscores.html) | HTML | 20 | 0 | 6 | 26 |
+| [index.html](/index.html) | HTML | 42 | 0 | 11 | 53 |
+| [js/logic.js](/js/logic.js) | JavaScript | 100 | 79 | 33 | 212 |
+| [js/questions.js](/js/questions.js) | JavaScript | 166 | 4 | 1 | 171 |
+| [js/scores.js](/js/scores.js) | JavaScript | 15 | 10 | 6 | 31 |
+| [js/utils.js](/js/utils.js) | JavaScript | 19 | 7 | 7 | 33 |
+
+### Languages
+| language | files | code | comment | blank | total |
+| :--- | ---: | ---: | ---: | ---: | ---: |
+| JavaScript | 4 | 300 | 100 | 47 | 447 |
+| Markdown | 1 | 164 | 0 | 59 | 223 |
+| CSS | 1 | 73 | 0 | 16 | 89 |
+| HTML | 2 | 62 | 0 | 17 | 79 |
+| JSON | 1 | 5 | 0 | 1 | 6 |
 
 ## References
 * https://dev.to/codebubb/how-to-shuffle-an-array-in-javascript-2ikj
