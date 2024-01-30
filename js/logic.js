@@ -11,19 +11,20 @@ let timer;
 let questionIndex = 0;
 
 /**
- * Description -
+ * Description - Score for the user.
  * @type {number}
  */
 let score = 0;
 
 /**
- * Description -
+ * Description - Total time available for the quiz. Is calculated based
+ * on the number of questions and time per question.
  * @type {number}
  */
 let time = quizQuestionsData.length * timePerQuestion;
 
 /**
- * Description -
+ * Description - Starts timer for quiz.
  */
 function startTimer() {
   timer = setInterval(() => {
