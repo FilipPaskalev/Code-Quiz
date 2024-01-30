@@ -1,16 +1,30 @@
-// TODO - add description of the variable and where is used
+/**
+ * Description - Timer used for the quiz.
+ * @type {number}
+ */
 let timer;
 
-// TODO - add description of the variable and where is used
+/**
+ * Description - Index of the current question in the quiz.
+ * @type {number}
+ */
 let questionIndex = 0;
 
-// TODO - add description of the variable and where is used
+/**
+ * Description -
+ * @type {number}
+ */
 let score = 0;
 
-// TODO - add description of the variable and where is used
+/**
+ * Description -
+ * @type {number}
+ */
 let time = quizQuestionsData.length * timePerQuestion;
 
-// TODO - add description of the function
+/**
+ * Description -
+ */
 function startTimer() {
   timer = setInterval(() => {
     time--;
@@ -21,7 +35,9 @@ function startTimer() {
   }, 1000);
 }
 
-// TODO - add description of the function
+/**
+ * Description -
+ */
 function startQuiz() {
   startScrnEl.setAttribute("class", "hide");
   questionsEl.removeAttribute("class");
@@ -29,7 +45,11 @@ function startQuiz() {
   renderQuestion();
 }
 
-// TODO - add description of the function
+/**
+ * Description -
+ * @param {*} array
+ * @returns {{}}
+ */
 function shuffleArr(array) {
   let arr = [...array];
 
@@ -41,7 +61,9 @@ function shuffleArr(array) {
   return arr;
 }
 
-// TODO - add description of the function
+/**
+ * Description -
+ */
 function renderQuestion() {
   const data = quizQuestionsData[questionIndex];
   let currentQuestions = [data.correctAnswer];
@@ -62,7 +84,9 @@ function renderQuestion() {
   }
 }
 
-// TODO - add description of the function
+/**
+ * Description -
+ */
 function renderNextQuestion() {
   if (questionIndex < quizQuestionsData.length) {
     choicesEl.innerHTML = null;
@@ -72,7 +96,10 @@ function renderNextQuestion() {
   }
 }
 
-// TODO - add description of the function
+/**
+ * Description -
+ * @param {*} message
+ */
 function renderFeedback(message) {
   feedbackEl.classList.remove("hide");
   feedbackEl.textContent = message;
@@ -82,7 +109,10 @@ function renderFeedback(message) {
   }, 1000);
 }
 
-// TODO - add description of the function
+/**
+ * Description -
+ * @param {*} event
+ */
 function checkAnswer(event) {
   const userSelection = event.target.textContent.substr(3);
   const correctAnswer = quizQuestionsData[questionIndex].correctAnswer;
@@ -102,7 +132,9 @@ function checkAnswer(event) {
   renderNextQuestion();
 }
 
-// TODO - add description of the function
+/**
+ * Description -
+ */
 function endQuiz() {
   clearInterval(timer);
   questionsEl.setAttribute("class", "hide");
@@ -110,7 +142,10 @@ function endQuiz() {
   finalScoreEl.textContent = score;
 }
 
-// TODO - add description of the function
+/**
+ * Description -
+ * @param {*} userDetails
+ */
 function saveHighScoreList(userDetails) {
   let highScoresList = JSON.parse(localStorage.getItem(highScoresKey)) || [];
 
@@ -123,7 +158,9 @@ function saveHighScoreList(userDetails) {
   localStorage.setItem(highScoresKey, JSON.stringify(highScoresList));
 }
 
-// TODO - add description of the function
+/**
+ * Description -
+ */
 function submitScore() {
   const userInitials = initialsInput.value;
   let userDetails = {
