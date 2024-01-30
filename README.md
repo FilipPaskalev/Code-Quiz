@@ -18,7 +18,6 @@
     - [Option 2 - Clone project](#option-2---clone-project)
   - [Project structure](#project-structure)
   - [Demo](#demo)
-  - [Features](#features)
   - [Tools and extensions](#tools-and-extensions)
     - [VS Code Counter](#vs-code-counter)
   - [Statistics](#statistics)
@@ -173,8 +172,6 @@ Screenshot of the application is on the image below.
 > [!IMPORTANT]
 > You can find deployed version of the project on 👉[direct link here](https://filippaskalev.github.io/Code-Quiz/) or by clicking on the picture above. ☝️
 >
-
-## Features
 
 ## Tools and extensions
 
