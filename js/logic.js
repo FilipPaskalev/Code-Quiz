@@ -99,8 +99,8 @@ function renderNextQuestion() {
 }
 
 /**
- * Description -
- * @param {*} message
+ * Description - Update UI to show feedback on the user's answer.
+ * @param {*} message - The feedback message to be displayed.
  */
 function renderFeedback(message) {
   feedbackEl.classList.remove("hide");
@@ -112,8 +112,9 @@ function renderFeedback(message) {
 }
 
 /**
- * Description -
- * @param {*} event
+ * Description - Checks the user's answer, updates the score and time,
+ * and renders feedback.
+ * @param {*} event - The event object containing the user's selection
  */
 function checkAnswer(event) {
   const userSelection = event.target.textContent.substr(3);
@@ -135,7 +136,8 @@ function checkAnswer(event) {
 }
 
 /**
- * Description -
+ * Description - Ends the quiz, clears the timer, and displays the end
+ * screen with the final score.
  */
 function endQuiz() {
   clearInterval(timer);
@@ -145,8 +147,9 @@ function endQuiz() {
 }
 
 /**
- * Description -
- * @param {*} userDetails
+ * Description - Saves the user's high score in the local storage.
+ * @param {*} userDetails - The details of the user, including user name
+ * and user score.
  */
 function saveHighScoreList(userDetails) {
   let highScoresList = JSON.parse(localStorage.getItem(highScoresKey)) || [];
@@ -161,7 +164,9 @@ function saveHighScoreList(userDetails) {
 }
 
 /**
- * Description -
+ * Description - Submits the user's score, including initials if provided
+ * (if not set initials to N/A). Redirects to the highscores page (to avoid
+ * submitting user score more than once).
  */
 function submitScore() {
   const userInitials = initialsInput.value;
@@ -174,6 +179,8 @@ function submitScore() {
 
   userDetails.score = score;
   saveHighScoreList(userDetails);
+
+  // Redirect to the highscores page
   window.location.href = "highscores.html";
 }
 
