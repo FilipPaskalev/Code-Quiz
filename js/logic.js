@@ -63,7 +63,7 @@ function shuffleArr(array) {
 }
 
 /**
- * Description -
+ * Description - Update UI to render current question on the screen.
  */
 function renderQuestion() {
   const data = quizQuestionsData[questionIndex];
